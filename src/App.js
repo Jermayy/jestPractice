@@ -1,20 +1,13 @@
+// @flow
+import * as React from 'react';
+
+import Main from './pages/Main';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>
-        TODOs
-      </h1>
-    
-    <button>
-  
-    </button>
-
-
-
-    </div>
-  );
-}
+const App = ():React.Node => (
+  <div>
+    <Main />
+  </div>
+);
 
 export default App;
