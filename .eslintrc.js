@@ -1,12 +1,14 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
   extends: [
     'plugin:react/recommended',
     'airbnb',
+    'plugin:flowtype/recommended',
   ],
+  env: {
+    browser: true,
+    es2021: true,
+    'jest/globals': true,
+  },
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
@@ -18,8 +20,8 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
-    'plugin:testing-library/react',
-    'plugin:jest-dom/recommended',
+    'eslint-plugin-testing-library',
+    'jest-dom',
   ],
   rules: {
     'no-use-before-define': 'off',

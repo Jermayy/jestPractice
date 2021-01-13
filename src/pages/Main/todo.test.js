@@ -1,11 +1,11 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import Main from './index';
+import Todo from './todo';
 
-test('Title Text', () => {
+test('Todo List', () => {
   const root = document.createElement('div');
 
-  ReactDOM.render(<Main />, root);
+  ReactDOM.render(<Todo />, root);
 
   expect(root.querySelector('h1').textContent).toBe('TODOs');
   expect(root.querySelector('label').textContent).toBe(
