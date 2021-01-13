@@ -1,14 +1,14 @@
+// @flow
 import * as React from 'react';
-import Header from './Header';
+
+import Header from './Header/header';
 import Todo from './todo';
 
-const Main = ():React.node => {
-    return(
-        <div>
-        <Header/>
-        <Todo/>
-        </div>
-    )
-};
+const Main = ():React.Node => (
+  <div>
+    <Header />
+    <Todo />
+  </div>
+);
 
 export default Main;
