@@ -5,7 +5,7 @@ import * as React from 'react';
 //     styles: {},
 // };
 
-const Header = () :React.node =>{
+const Header = (): React.node =>{
   const handleOnClick = (e) => {
     e.preventDefault();
     console.log('header');
